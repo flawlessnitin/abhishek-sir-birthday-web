@@ -209,8 +209,8 @@ export default function App() {
           viewport={{ once: true }}
           className="text-center mb-24"
         >
-          <h2 className="text-[70px] font-['Playfair_Display:400',serif] text-[#f5e6d3] mb-6 leading-tight">
-            <span className="font-['Playfair_Display:400italic',serif] italic text-[#d4af37]">Wishes</span> For You
+          <h2 className="text-[70px] text-[#f5e6d3] mb-6 leading-tight" style={{ fontFamily: 'Dancing Script, cursive' }}>
+            <span className="text-[#d4af37]">Wishes</span> For You
           </h2>
           <div className="h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto w-64" />
         </motion.div>
@@ -247,15 +247,13 @@ export default function App() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <p className="text-[32px] font-['Lora:400',serif] text-[#f5e6d3]/90 mb-12 leading-relaxed max-w-4xl mx-auto">
+            <p className="text-[#f5e6d3]/90 mb-12 leading-relaxed max-w-4xl mx-auto" style={{ fontFamily: 'Dancing Script, cursive', fontSize: '42px' }}>
               Here's to another year of achievements, breakthroughs, and making a lasting impact.
               Thank you for being an{' '}
-              <span className="font-['Lora:400italic',serif] italic text-[#d4af37]">exceptional leader</span>
+              <span className="text-[#d4af37]">exceptional leader</span>
               {' '}and mentor.
             </p>
           </motion.div>
-
-          <InteractiveButton />
 
           <motion.div
             initial={{ opacity: 0 }}

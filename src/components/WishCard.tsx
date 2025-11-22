@@ -20,9 +20,9 @@ export function WishCard({ icon: Icon, title, description, delay }: WishCardProp
       <div className="relative group cursor-pointer">
         {/* Glow effect */}
         <div className="absolute -inset-1 bg-gradient-to-r from-[#d4af37] to-[#f5d76e] rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-500" />
-        
+
         {/* Card content */}
-        <div className="relative bg-gradient-to-br from-[#1a1a1a] to-black border border-[#d4af37] rounded-lg p-8 h-full">
+        <div className="relative bg-gradient-to-br from-[#1a1a1a] to-black border border-[#d4af37] rounded-lg p-16 h-full">
           {/* Icon with animated background */}
           <motion.div
             className="mb-6"
@@ -44,11 +44,11 @@ export function WishCard({ icon: Icon, title, description, delay }: WishCardProp
             </div>
           </motion.div>
 
-          <h3 className="text-[36px] font-['Playfair_Display:600',serif] text-[#d4af37] mb-4">
+          <h3 className="text-[#d4af37] mb-4" style={{ fontFamily: 'Yellowtail, cursive', fontSize: '52px' }}>
             {title}
           </h3>
-          
-          <p className="text-[18px] font-['Lora:400',serif] text-[#f5e6d3]/80 leading-relaxed">
+
+          <p className="text-[#f5e6d3]/80 leading-relaxed" style={{ fontFamily: 'Dancing Script, cursive', fontSize: '32px' }}>
             {description}
           </p>
 
