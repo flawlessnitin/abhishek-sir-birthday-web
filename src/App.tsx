@@ -23,9 +23,9 @@ export default function App() {
     <div className="bg-black min-h-screen relative overflow-x-hidden">
       <GoldenParticles />
       <FloatingBalloons />
-      
+
       {/* Hero Section */}
-      <motion.section 
+      <motion.section
         className="min-h-screen relative flex items-center justify-center px-8 pt-20"
         style={{ opacity }}
       >
@@ -99,14 +99,14 @@ export default function App() {
               }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              <h1 className="text-[110px] font-['Playfair_Display:400',serif] text-[#f5e6d3] leading-[1.1] mb-6" style={{}}>
+              <h1 className="text-[110px] text-[#f5e6d3] leading-[1.1] mb-6" style={{ fontFamily: "'Dancing Script', cursive" }}>
                 Wishing you a{' '}
-                <span className="font-['Playfair_Display:400italic',serif] italic">wonderful</span>
+                <span className=" italic">wonderful</span>
                 <br />
-                <span className="font-['Playfair_Display:400italic',serif] italic">birthday celebration</span>
+                <span className=" italic">birthday celebration</span>
               </h1>
             </motion.div>
-            
+
             <motion.div
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
@@ -118,9 +118,10 @@ export default function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
-              className="text-[64px] font-['Playfair_Display:700',serif] text-[#d4af37] tracking-wide"
+              className="text-[64px] text-[#d4af37] tracking-wide"
+              style={{ fontFamily: "'Yellowtail', cursive" }}
             >
-              Abhishek Anand
+              Abhisheik Anand
             </motion.h2>
           </motion.div>
 
@@ -154,9 +155,10 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.6 }}
-            className="text-[26px] text-[#f5e6d3]/90 font-['Lora:400',serif] leading-relaxed max-w-3xl mx-auto"
+            className=" text-[#f5e6d3]/90 leading-relaxed max-w-5xl mx-auto"
+            style={{ fontFamily: "'Dancing Script', cursive", fontSize: '2.5rem' }}
           >
-            Today we celebrate not just another year, but the incredible journey of leadership, 
+            Today we celebrate not just another year, but the incredible journey of leadership,
             wisdom, and inspiration you bring to our team every single day.
           </motion.p>
 
@@ -188,9 +190,9 @@ export default function App() {
           viewport={{ once: true }}
           className="text-center mb-24"
         >
-          <h2 className="text-[70px] font-['Playfair_Display:400',serif] text-[#f5e6d3] mb-6 leading-tight">
+          <h2 className="text-[70px]  text-[#f5e6d3] mb-6 leading-tight" style={{ fontFamily: "'Dancing Script', cursive" }}>
             A Year of{' '}
-            <span className="font-['Playfair_Display:400italic',serif] italic text-[#d4af37]">Excellence</span>
+            <span className=" italic text-[#d4af37]">Excellence</span>
           </h2>
           <div className="h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto w-64" />
         </motion.div>
@@ -246,7 +248,7 @@ export default function App() {
             className="mb-12"
           >
             <p className="text-[32px] font-['Lora:400',serif] text-[#f5e6d3]/90 mb-12 leading-relaxed max-w-4xl mx-auto">
-              Here's to another year of achievements, breakthroughs, and making a lasting impact. 
+              Here's to another year of achievements, breakthroughs, and making a lasting impact.
               Thank you for being an{' '}
               <span className="font-['Lora:400italic',serif] italic text-[#d4af37]">exceptional leader</span>
               {' '}and mentor.

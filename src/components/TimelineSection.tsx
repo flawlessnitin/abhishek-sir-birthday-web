@@ -26,7 +26,7 @@ const milestones = [
 
 export function TimelineSection() {
   return (
-    <div className="max-w-6xl mx-auto px-8 relative">
+    <div className="max-w-7xl mx-auto px-8 relative">
       {/* Center line */}
       <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#d4af37] via-[#d4af37]/50 to-transparent" />
 
@@ -44,21 +44,21 @@ export function TimelineSection() {
               viewport={{ once: true }}
               className={`relative flex items-center ${isLeft ? 'justify-end' : 'justify-start'}`}
             >
-              <div className={`w-[45%] ${isLeft ? 'text-right pr-16' : 'pl-16'}`}>
+              <div className={`w-[50%] ${isLeft ? 'text-right pr-20' : 'pl-20'}`}>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   className="inline-block"
                 >
-                  <div className="bg-gradient-to-br from-[#1a1a1a] to-black border-2 border-[#d4af37] rounded-lg p-8 shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:shadow-[0_0_50px_rgba(212,175,55,0.5)] transition-all duration-300">
-                    <div className={`flex items-center gap-4 mb-4 ${isLeft ? 'flex-row-reverse' : ''}`}>
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#d4af37] to-[#f5d76e] flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-black" />
+                  <div className="bg-gradient-to-br from-[#1a1a1a] to-black border-2 border-[#d4af37] rounded-lg p-16 shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:shadow-[0_0_50px_rgba(212,175,55,0.5)] transition-all duration-300">
+                    <div className={`flex items-center gap-6 mb-6 ${isLeft ? 'flex-row-reverse' : ''}`}>
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#d4af37] to-[#f5d76e] flex items-center justify-center">
+                        <Icon className="w-8 h-8 text-black" />
                       </div>
-                      <h3 className="text-[32px] font-['Playfair_Display:600',serif] text-[#d4af37]">
+                      <h3 className="text-[#d4af37]" style={{ fontFamily: 'Yellowtail, cursive', fontWeight: 400, fontSize: '64px' }}>
                         {milestone.title}
                       </h3>
                     </div>
-                    <p className="text-[18px] font-['Lora:400',serif] text-[#f5e6d3]/80 leading-relaxed">
+                    <p className="text-[#f5e6d3]/80 leading-relaxed" style={{ fontFamily: 'Dancing Script, cursive', fontWeight: 400, fontSize: '36px' }}>
                       {milestone.description}
                     </p>
                   </div>
